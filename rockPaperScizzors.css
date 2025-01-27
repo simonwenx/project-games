@@ -1,0 +1,121 @@
+@font-face{
+  font-family : myFont;
+  src : url(icons/WhisperingSignature.ttf);
+}
+body{
+  margin : 0;
+  padding : 0;
+  background-color : black;
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  height : 100vh;
+}
+.header{
+  position : fixed;
+  top : 0;
+  background-color : black;
+  height : 100px;
+  width : 100%;
+  display : flex;
+  align-items : center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.left-sidebar , .right-sidebar {
+  height : 100%;
+  background-color : black;
+}
+.title{
+  color : white;
+  margin : 0;
+  position : fixed;
+  top : 10px;
+  font-size : 35px;
+  font-family : myFont;
+}
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hello{
+font-size : 40px;
+color : white;
+position : fixed;
+top : 115px;
+}
+.game-div{
+  display: grid;
+  grid-template-columns : 1fr 1fr 1fr;
+  height : 550px;
+  width : 550px;
+  align-items : start;
+  position : relative;
+  top : 75px;
+  border-style : solid;
+  border-color: white;
+}
+.playerOne{
+  position : fixed;
+  top : 115px;
+  left : 220px;
+  font-size : 40px;
+  color : white;
+}
+.playerTwo{
+  position : fixed;
+  top : 115px;
+  right : 210px;
+  font-size : 40px;
+  color : white;
+}
+.rock , .paper , .scissors{
+  padding-top : 30px;
+  color : white;
+  display : flex;
+  flex-direction: column;
+  justify-content : center;
+  align-items : center;
+}
+.rock-image, .scissors-image, .paper-image{
+  height : 150px;
+  width : 150px;
+}
+.rock-text , .paper-text , .scissors-text{
+  font-size : 30px;
+}
+.results{
+  position : fixed;
+  top : 530px;
+  height : 150px;
+  width : 500px;
+  background-color : black;
+  color : white;
+  font-size : 40px;
+}
+.reset-div{
+  position : fixed;
+  left : 630px;
+  top : 70px;
+  z-index: 200;
+}
+.reset{
+  border-style : solid;
+  height : 40px;
+  width : 180px;
+  border-radius : 3px;
+  font-size : 20px;
+}
+.reset:hover{
+  opacity : 0.6;
+}
+.reset:active{
+  opacity : 0.4;
+}
+.rock-image:hover , .scissors-image:hover , .paper-image:hover{
+  opacity : 0.6;
+}
+.rock-image:active , .paper-image:active , .scissors-image:active{
+  opacity : 0.4;
+}
