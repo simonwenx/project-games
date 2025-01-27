@@ -119,3 +119,9 @@ top : 115px;
 .rock-image:active , .paper-image:active , .scissors-image:active{
   opacity : 0.4;
 }
+.return{
+  position : fixed;
+  left : 0;
+  top : 20;
+  height : 30px;
+}
