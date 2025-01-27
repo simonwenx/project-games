@@ -1,0 +1,95 @@
+@font-face {
+  font-family: myFont;
+  src: url(icons/WhisperingSignature.ttf);
+}
+body{
+  margin : 0;
+  padding : 0;
+  background-color : black;
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  height : 100vh;
+}
+.header{
+  position : fixed;
+  top : 0;
+  background-color : black;
+  height : 100px;
+  width : 100%;
+  display : flex;
+  align-items : center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.left-sidebar , .right-sidebar {
+  height : 100%;
+  background-color : black;
+}
+.title{
+  color : white;
+  margin : 0;
+  position : fixed;
+  top : 10px;
+  font-size : 35px;
+  font-family : myFont;
+}
+.game-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  height : 550px;
+  width : 550px;
+  position : relative;
+  top : 75px;
+}
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hello{
+font-size : 40px;
+color : white;
+position : fixed;
+top : 115px;
+}
+.sq1,.sq2,.sq3,.sq4,.sq5,.sq6,.sq7,.sq8,.sq9{
+  display : flex;
+  align-items : center;
+  justify-content : center;
+}
+.playerOne{
+  position : fixed;
+  top : 115px;
+  left : 220px;
+  font-size : 40px;
+  color : white;
+}
+.playerTwo{
+  position : fixed;
+  top : 115px;
+  right : 220px;
+  font-size : 40px;
+  color : white;
+}
+.reset-div{
+  position : fixed;
+  left : 630px;
+  top : 70px;
+  z-index: 200;
+}
+.reset{
+  border-style : solid;
+  height : 40px;
+  width : 180px;
+  border-radius : 3px;
+  font-size : 20px;
+}
+.reset:hover{
+  opacity : 0.6;
+}
+.reset:active{
+  opacity : 0.4;
+}
